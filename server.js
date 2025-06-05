@@ -10,9 +10,9 @@ const express = require('express');
      app.use(express.json());
      app.use(cors({
   origin: [
-    'https://zackreactjsdemo.vercel.app', // deployed frontend
-    'http://localhost:3000',              // local dev
-    'http://localhost:3002'               // local dev
+    'https://zackreactjstest.vercel.app',
+    'http://localhost:3000',
+    'http://localhost:3002'
   ],
   credentials: true
 }));
