@@ -8,7 +8,7 @@ const Dashboard = ({ token }) => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/users/me', {
+        const response = await axios.get('https://reactdemoproject.onrender.com/api/users/me', {
           headers: {
             'x-api-key': 'clip-pilot2000',
             Authorization: `Bearer ${token}`
