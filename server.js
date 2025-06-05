@@ -9,10 +9,12 @@ const express = require('express');
      const app = express();
      app.use(express.json());
      app.use(cors({
-     origin: ['https://zackreactjsdemo.vercel.app/',
-     'http://localhost:3000'
-     ], // replace with your actual Vercel URL
-     credentials: true
+  origin: [
+    'https://zackreactjsdemo.vercel.app', // deployed frontend
+    'http://localhost:3000',              // local dev
+    'http://localhost:3002'               // local dev
+  ],
+  credentials: true
 }));
 
      // Connect to MongoDB
